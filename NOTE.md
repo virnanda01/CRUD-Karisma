@@ -18,4 +18,3 @@ KENDALA SELAMA MEMBUAT APLIKASI CRUD :
 - kendala di tabel nim mahasiswa ketika dimasukkan / diinpu angka 0 tidak bisa atau eror jadi dari $table->Integer('nim'); dirubah ke $table->bigInteger('nim');
 - kendala di bagian index.blade.php ada kekeliruan script pada bagian <form action="/mahasiswa/({$w->id}}" method="POST"> yang seharusnya ditulis <form action="/mahasiswa/{{$m->id}}" method="POST"> sehingga menyebabkan eror.
 - kendala dibagian no ketika di delete no tidak bisa berubah atau tidak berurutan <td>{{$m->id}}</td> saya rubah menjadi <td>{{$loop->iteration}}</td>.
-- 
